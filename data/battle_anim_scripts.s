@@ -78,7 +78,7 @@ gBattleAnims_Moves::
 	.4byte Move_HEADBUTT
 	.4byte Move_HORN_ATTACK
 	.4byte Move_FURY_ATTACK
-	.4byte Move_HORN_DRILL
+	.4byte MOVE_DRILL_RUN
 	.4byte Move_TACKLE
 	.4byte Move_BODY_SLAM
 	.4byte Move_WRAP

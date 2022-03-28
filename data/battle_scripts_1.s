@@ -3477,7 +3477,7 @@ BattleScript_MonTookFutureAttack::
 	printstring STRINGID_PKMNTOOKATTACK
 	waitmessage 0x40
 	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, 0, BattleScript_CheckDoomDesireMiss
-	accuracycheck BattleScript_FutureAttackMiss, MOVE_FUTURE_SIGHT
+	accuracycheck BattleScript_FutureAttackMiss, MOVE_HP_FIGHTING
 	goto BattleScript_FutureAttackAnimate
 
 BattleScript_CheckDoomDesireMiss::
