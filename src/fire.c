@@ -728,7 +728,7 @@ static void sub_80ACE50(struct Sprite *sprite)
         DestroyAnimSprite(sprite);
 }
 
-void AnimTask_EruptionLaunchRocks(u8 taskId) // initialize animation task for Move_ERUPTION?
+void AnimTask_EruptionLaunchRocks(u8 taskId) // initialize animation task for MOVE_DRACO_METEOR?
 {
     struct Task *task = &gTasks[taskId];
 
@@ -744,7 +744,7 @@ void AnimTask_EruptionLaunchRocks(u8 taskId) // initialize animation task for Mo
     task->func = AnimTask_EruptionLaunchRocks_Step;
 }
 
-static void AnimTask_EruptionLaunchRocks_Step(u8 taskId) // animate Move_ERUPTION?
+static void AnimTask_EruptionLaunchRocks_Step(u8 taskId) // animate MOVE_DRACO_METEOR?
 {
     struct Task *task = &gTasks[taskId];
 

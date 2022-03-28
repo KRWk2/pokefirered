@@ -118,7 +118,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 				{
 					.species = SPECIES_GOLBAT,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_GIGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_SLUDGE_BOMB, MOVE_MEAN_LOOK},
+					.moves = {MOVE_GIGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_GUNK_SHOT, MOVE_MEAN_LOOK},
 					.hpEV = 0,
 					.attackEV = 200,
 					.defenseEV = 0,
@@ -704,7 +704,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 				{
 					.species = SPECIES_WEEZING,
 					.heldItem = ITEM_LEFTOVERS,
-					.moves = {MOVE_EXPLOSION, MOVE_SMOKESCREEN, MOVE_SLUDGE_BOMB, MOVE_THUNDERBOLT},
+					.moves = {MOVE_EXPLOSION, MOVE_SMOKESCREEN, MOVE_GUNK_SHOT, MOVE_THUNDERBOLT},
 					.hpEV = 100,
 					.attackEV = 100,
 					.defenseEV = 100,
@@ -726,7 +726,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 				{
 					.species = SPECIES_CHARIZARD,
 					.heldItem = ITEM_WHITE_HERB,
-					.moves = {MOVE_OVERHEAT, MOVE_OUTRAGE, MOVE_DRAGON_RAGE, MOVE_SMOKESCREEN},
+					.moves = {MOVE_OVERHEAT, MOVE_HP_GROUND, MOVE_DRAGON_RAGE, MOVE_SMOKESCREEN},
 					.hpEV = 100,
 					.attackEV = 110,
 					.defenseEV = 0,
@@ -1847,7 +1847,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 				{
 					.species = SPECIES_CHARIZARD,
 					.heldItem = ITEM_SCOPE_LENS,
-					.moves = {MOVE_DRAGON_CLAW, MOVE_METAL_CLAW, MOVE_AERIAL_ACE, MOVE_OUTRAGE},
+					.moves = {MOVE_DRAGON_CLAW, MOVE_METAL_CLAW, MOVE_AERIAL_ACE, MOVE_HP_GROUND},
 					.hpEV = 200,
 					.attackEV = 200,
 					.defenseEV = 0,
@@ -1869,7 +1869,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 				{
 					.species = SPECIES_RHYDON,
 					.heldItem = ITEM_SCOPE_LENS,
-					.moves = {MOVE_MEGAHORN, MOVE_HORN_DRILL, MOVE_CRUSH_CLAW, MOVE_BRICK_BREAK},
+					.moves = {MOVE_MEGAHORN, MOVE_DRILL_RUN, MOVE_CRUSH_CLAW, MOVE_BRICK_BREAK},
 					.hpEV = 100,
 					.attackEV = 210,
 					.defenseEV = 200,
@@ -1990,7 +1990,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 				{
 					.species = SPECIES_DRAGONAIR,
 					.heldItem = ITEM_SILK_SCARF,
-					.moves = {MOVE_OUTRAGE, MOVE_IRON_TAIL, MOVE_DOUBLE_EDGE, MOVE_SLAM},
+					.moves = {MOVE_HP_GROUND, MOVE_IRON_TAIL, MOVE_DOUBLE_EDGE, MOVE_SLAM},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 0,
@@ -2330,7 +2330,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_5 = {
 				{
 					.species = SPECIES_ARBOK,
 					.heldItem = ITEM_POISON_BARB,
-					.moves = {MOVE_IRON_TAIL, MOVE_SLUDGE_BOMB, MOVE_ROCK_SLIDE, MOVE_TOXIC},
+					.moves = {MOVE_IRON_TAIL, MOVE_GUNK_SHOT, MOVE_ROCK_SLIDE, MOVE_TOXIC},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -2352,7 +2352,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_5 = {
 				{
 					.species = SPECIES_NIDOKING,
 					.heldItem = ITEM_SOFT_SAND,
-					.moves = {MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_SLUDGE_BOMB, MOVE_ROCK_SLIDE},
+					.moves = {MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_GUNK_SHOT, MOVE_ROCK_SLIDE},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -2596,7 +2596,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_2 = {
 				{
 					.species = SPECIES_BEEDRILL,
 					.heldItem = ITEM_BRIGHT_POWDER,
-					.moves = {MOVE_SLUDGE_BOMB, MOVE_TWINEEDLE, MOVE_DOUBLE_TEAM, MOVE_AERIAL_ACE},
+					.moves = {MOVE_GUNK_SHOT, MOVE_TWINEEDLE, MOVE_DOUBLE_TEAM, MOVE_AERIAL_ACE},
 					.hpEV = 255,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -2894,7 +2894,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_3 = {
 				{
 					.species = SPECIES_PINSIR,
 					.heldItem = ITEM_FOCUS_BAND,
-					.moves = {MOVE_ROCK_TOMB, MOVE_SEISMIC_TOSS, MOVE_SUBMISSION, MOVE_PROTECT},
+					.moves = {MOVE_ROCK_TOMB, MOVE_SEISMIC_TOSS, MOVE_HP_PSYCHIC, MOVE_PROTECT},
 					.hpEV = 255,
 					.attackEV = 255,
 					.defenseEV = 0,
@@ -3367,7 +3367,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 				{
 					.species = SPECIES_QUAGSIRE,
 					.heldItem = ITEM_SOFT_SAND,
-					.moves = {MOVE_EARTHQUAKE, MOVE_SLUDGE_BOMB, MOVE_BLIZZARD, MOVE_BRICK_BREAK},
+					.moves = {MOVE_EARTHQUAKE, MOVE_GUNK_SHOT, MOVE_BLIZZARD, MOVE_BRICK_BREAK},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 0,
@@ -3466,7 +3466,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 				{
 					.species = SPECIES_SKARMORY,
 					.heldItem = ITEM_KINGS_ROCK,
-					.moves = {MOVE_SANDSTORM, MOVE_STEEL_WING, MOVE_AIR_CUTTER, MOVE_SPIKES},
+					.moves = {MOVE_SANDSTORM, MOVE_STEEL_WING, MOVE_AIR_SLASH, MOVE_SPIKES},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -3532,7 +3532,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 				{
 					.species = SPECIES_GENGAR,
 					.heldItem = ITEM_KINGS_ROCK,
-					.moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_THUNDERBOLT, MOVE_PSYCHIC},
+					.moves = {MOVE_SHADOW_BALL, MOVE_GUNK_SHOT, MOVE_THUNDERBOLT, MOVE_PSYCHIC},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -3620,7 +3620,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 				{
 					.species = SPECIES_VILEPLUME,
 					.heldItem = ITEM_PETAYA_BERRY,
-					.moves = {MOVE_INGRAIN, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_STUN_SPORE},
+					.moves = {MOVE_INGRAIN, MOVE_GIGA_DRAIN, MOVE_GUNK_SHOT, MOVE_STUN_SPORE},
 					.hpEV = 255,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -3785,7 +3785,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 				{
 					.species = SPECIES_VICTREEBEL,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_REFLECT, MOVE_ATTRACT},
+					.moves = {MOVE_GIGA_DRAIN, MOVE_GUNK_SHOT, MOVE_REFLECT, MOVE_ATTRACT},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 255,
@@ -3873,7 +3873,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 				{
 					.species = SPECIES_ARIADOS,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SIGNAL_BEAM, MOVE_TOXIC},
+					.moves = {MOVE_PSYCHIC, MOVE_GUNK_SHOT, MOVE_SIGNAL_BEAM, MOVE_TOXIC},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 255,
@@ -4169,7 +4169,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 				{
 					.species = SPECIES_NIDOQUEEN,
 					.heldItem = ITEM_HARD_STONE,
-					.moves = {MOVE_EARTHQUAKE, MOVE_SUPERPOWER, MOVE_SLUDGE_BOMB, MOVE_ROCK_SLIDE},
+					.moves = {MOVE_EARTHQUAKE, MOVE_SUPERPOWER, MOVE_GUNK_SHOT, MOVE_ROCK_SLIDE},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -4224,7 +4224,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 				{
 					.species = SPECIES_VICTREEBEL,
 					.heldItem = ITEM_MIRACLE_SEED,
-					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB},
+					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_GIGA_DRAIN, MOVE_GUNK_SHOT},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -4268,7 +4268,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 				{
 					.species = SPECIES_VILEPLUME,
 					.heldItem = ITEM_PERSIM_BERRY,
-					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_PETAL_DANCE, MOVE_SLUDGE_BOMB},
+					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_PETAL_DANCE, MOVE_GUNK_SHOT},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -4290,7 +4290,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 				{
 					.species = SPECIES_VENUSAUR,
 					.heldItem = ITEM_PERSIM_BERRY,
-					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_PETAL_DANCE, MOVE_SLUDGE_BOMB},
+					.moves = {MOVE_SWEET_SCENT, MOVE_ATTRACT, MOVE_PETAL_DANCE, MOVE_GUNK_SHOT},
 					.hpEV = 84,
 					.attackEV = 84,
 					.defenseEV = 84,
@@ -4564,7 +4564,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_6 = {
 				{
 					.species = SPECIES_TENTACRUEL,
 					.heldItem = ITEM_POISON_BARB,
-					.moves = {MOVE_SURF, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM, MOVE_MIRROR_COAT},
+					.moves = {MOVE_SURF, MOVE_GUNK_SHOT, MOVE_ICE_BEAM, MOVE_MIRROR_COAT},
 					.hpEV = 100,
 					.attackEV = 0,
 					.defenseEV = 110,
@@ -4918,7 +4918,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_1 = {
 				{
 					.species = SPECIES_GRANBULL,
 					.heldItem = ITEM_LIECHI_BERRY,
-					.moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB},
+					.moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_SHADOW_BALL, MOVE_GUNK_SHOT},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 130,
@@ -5623,7 +5623,7 @@ static const struct TrainerTowerFloor gUnknown_847FD0C = {
 				{
 					.species = SPECIES_NIDORAN_F,
 					.heldItem = ITEM_POISON_BARB,
-					.moves = {MOVE_WATER_PULSE, MOVE_SLUDGE_BOMB, MOVE_CRUNCH, MOVE_DIG},
+					.moves = {MOVE_WATER_PULSE, MOVE_GUNK_SHOT, MOVE_CRUNCH, MOVE_DIG},
 					.hpEV = 110,
 					.attackEV = 100,
 					.defenseEV = 100,
@@ -5788,7 +5788,7 @@ static const struct TrainerTowerFloor gUnknown_847FD0C = {
 				{
 					.species = SPECIES_NIDORAN_M,
 					.heldItem = ITEM_FOCUS_BAND,
-					.moves = {MOVE_WATER_PULSE, MOVE_SLUDGE_BOMB, MOVE_HORN_DRILL, MOVE_DIG},
+					.moves = {MOVE_WATER_PULSE, MOVE_GUNK_SHOT, MOVE_DRILL_RUN, MOVE_DIG},
 					.hpEV = 110,
 					.attackEV = 100,
 					.defenseEV = 100,
@@ -5876,7 +5876,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 				{
 					.species = SPECIES_SEAKING,
 					.heldItem = ITEM_SCOPE_LENS,
-					.moves = {MOVE_SURF, MOVE_MEGAHORN, MOVE_HORN_DRILL, MOVE_PROTECT},
+					.moves = {MOVE_SURF, MOVE_MEGAHORN, MOVE_DRILL_RUN, MOVE_PROTECT},
 					.hpEV = 100,
 					.attackEV = 100,
 					.defenseEV = 100,
@@ -6085,7 +6085,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 				{
 					.species = SPECIES_OCTILLERY,
 					.heldItem = ITEM_FOCUS_BAND,
-					.moves = {MOVE_OCTAZOOKA, MOVE_SLUDGE_BOMB, MOVE_THUNDER_WAVE, MOVE_HYPER_BEAM},
+					.moves = {MOVE_OCTAZOOKA, MOVE_GUNK_SHOT, MOVE_THUNDER_WAVE, MOVE_HYPER_BEAM},
 					.hpEV = 155,
 					.attackEV = 100,
 					.defenseEV = 0,
@@ -6107,7 +6107,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 				{
 					.species = SPECIES_QWILFISH,
 					.heldItem = ITEM_QUICK_CLAW,
-					.moves = {MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_SHADOW_BALL, MOVE_DESTINY_BOND},
+					.moves = {MOVE_HYDRO_PUMP, MOVE_GUNK_SHOT, MOVE_SHADOW_BALL, MOVE_DESTINY_BOND},
 					.hpEV = 100,
 					.attackEV = 100,
 					.defenseEV = 0,
@@ -6162,7 +6162,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 				{
 					.species = SPECIES_MAGIKARP,
 					.heldItem = ITEM_CHOICE_BAND,
-					.moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+					.moves = {MOVE_HP_WATER, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -6502,7 +6502,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 				{
 					.species = SPECIES_MAGIKARP,
 					.heldItem = ITEM_BRIGHT_POWDER,
-					.moves = {MOVE_SPLASH, MOVE_FLAIL, MOVE_TACKLE, MOVE_NONE},
+					.moves = {MOVE_HP_WATER, MOVE_FLAIL, MOVE_TACKLE, MOVE_NONE},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -6524,7 +6524,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 				{
 					.species = SPECIES_SEAKING,
 					.heldItem = ITEM_CHERI_BERRY,
-					.moves = {MOVE_HORN_DRILL, MOVE_MEGAHORN, MOVE_SUPERSONIC, MOVE_AGILITY},
+					.moves = {MOVE_DRILL_RUN, MOVE_MEGAHORN, MOVE_SUPERSONIC, MOVE_AGILITY},
 					.hpEV = 255,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -6776,7 +6776,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_3 = {
 				{
 					.species = SPECIES_WEEZING,
 					.heldItem = ITEM_SALAC_BERRY,
-					.moves = {MOVE_EXPLOSION, MOVE_SLUDGE_BOMB, MOVE_DESTINY_BOND, MOVE_THUNDERBOLT},
+					.moves = {MOVE_EXPLOSION, MOVE_GUNK_SHOT, MOVE_DESTINY_BOND, MOVE_THUNDERBOLT},
 					.hpEV = 0,
 					.attackEV = 200,
 					.defenseEV = 155,
@@ -7197,7 +7197,7 @@ static const struct TrainerTowerFloor gUnknown_848144C = {
 				{
 					.species = SPECIES_MUK,
 					.heldItem = ITEM_CHOICE_BAND,
-					.moves = {MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_SHADOW_BALL, MOVE_BODY_SLAM},
+					.moves = {MOVE_THUNDERBOLT, MOVE_GUNK_SHOT, MOVE_SHADOW_BALL, MOVE_BODY_SLAM},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 155,
@@ -7406,7 +7406,7 @@ static const struct TrainerTowerFloor gUnknown_848144C = {
 				{
 					.species = SPECIES_RHYDON,
 					.heldItem = ITEM_CHOICE_BAND,
-					.moves = {MOVE_THUNDERBOLT, MOVE_MEGAHORN, MOVE_HORN_DRILL, MOVE_ROCK_TOMB},
+					.moves = {MOVE_THUNDERBOLT, MOVE_MEGAHORN, MOVE_DRILL_RUN, MOVE_ROCK_TOMB},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 0,
@@ -7428,7 +7428,7 @@ static const struct TrainerTowerFloor gUnknown_848144C = {
 				{
 					.species = SPECIES_DRAGONITE,
 					.heldItem = ITEM_SCOPE_LENS,
-					.moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_OUTRAGE, MOVE_FLAMETHROWER},
+					.moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_HP_GROUND, MOVE_FLAMETHROWER},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -7450,7 +7450,7 @@ static const struct TrainerTowerFloor gUnknown_848144C = {
 				{
 					.species = SPECIES_LAPRAS,
 					.heldItem = ITEM_SHELL_BELL,
-					.moves = {MOVE_THUNDERBOLT, MOVE_BLIZZARD, MOVE_SURF, MOVE_HORN_DRILL},
+					.moves = {MOVE_THUNDERBOLT, MOVE_BLIZZARD, MOVE_SURF, MOVE_DRILL_RUN},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 155,
@@ -7582,7 +7582,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_7 = {
 				{
 					.species = SPECIES_TENTACRUEL,
 					.heldItem = ITEM_QUICK_CLAW,
-					.moves = {MOVE_RAIN_DANCE, MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB},
+					.moves = {MOVE_RAIN_DANCE, MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_GUNK_SHOT},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 100,
@@ -7659,7 +7659,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_7 = {
 				{
 					.species = SPECIES_MAGNETON,
 					.heldItem = ITEM_PETAYA_BERRY,
-					.moves = {MOVE_THUNDER, MOVE_SONIC_BOOM, MOVE_METAL_SOUND, MOVE_REFLECT},
+					.moves = {MOVE_THUNDER, MOVE_SONIC_BOOM, MOVE_FLASH_CANNON, MOVE_REFLECT},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 155,
@@ -7703,7 +7703,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_7 = {
 				{
 					.species = SPECIES_DRAGONAIR,
 					.heldItem = ITEM_SHELL_BELL,
-					.moves = {MOVE_THUNDER, MOVE_SURF, MOVE_BLIZZARD, MOVE_OUTRAGE},
+					.moves = {MOVE_THUNDER, MOVE_SURF, MOVE_BLIZZARD, MOVE_HP_GROUND},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 50,
@@ -8369,12 +8369,12 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 			.speechBefore = {EC_WORD_LALALA, EC_WORD_LET_S, EC_MOVE(SING), EC_WORD_ABOUT, EC_WORD_ELECTRIC, EC_WORD_POWER},
 			.speechWin = {EC_MOVE2(THUNDER_SHOCK), EC_WORD_IS, EC_WORD_ELECTRIC, EC_WORD_YOU, EC_WORD_KNOW, EC_WORD_QUES},
 			.speechLose = {EC_WORD_ELECTRIC, EC_WORD_EXCL, EC_MOVE2(FLASH), EC_MOVE2(FLASH), EC_MOVE2(FLASH), EC_WORD_EXCL_EXCL},
-			.speechAfter = {EC_WORD_ALL, EC_WORD_TOGETHER, EC_WORD_NOW, EC_WORD_EXCL, EC_MOVE(SPARK), EC_MOVE(SPARK)},
+			.speechAfter = {EC_WORD_ALL, EC_WORD_TOGETHER, EC_WORD_NOW, EC_WORD_EXCL, EC_MOVE(WILD_CHARGE), EC_MOVE(WILD_CHARGE)},
 			.mons = {
 				{
 					.species = SPECIES_WEEZING,
 					.heldItem = ITEM_CHOICE_BAND,
-					.moves = {MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_FLAMETHROWER, MOVE_SHADOW_BALL},
+					.moves = {MOVE_THUNDERBOLT, MOVE_GUNK_SHOT, MOVE_FLAMETHROWER, MOVE_SHADOW_BALL},
 					.hpEV = 0,
 					.attackEV = 255,
 					.defenseEV = 0,
@@ -8396,7 +8396,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 				{
 					.species = SPECIES_MUK,
 					.heldItem = ITEM_LEFTOVERS,
-					.moves = {MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_CURSE},
+					.moves = {MOVE_THUNDERBOLT, MOVE_GUNK_SHOT, MOVE_GIGA_DRAIN, MOVE_CURSE},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 150,
@@ -8462,7 +8462,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 				{
 					.species = SPECIES_CROBAT,
 					.heldItem = ITEM_BRIGHT_POWDER,
-					.moves = {MOVE_SLUDGE_BOMB, MOVE_CONFUSE_RAY, MOVE_GIGA_DRAIN, MOVE_TOXIC},
+					.moves = {MOVE_GUNK_SHOT, MOVE_CONFUSE_RAY, MOVE_GIGA_DRAIN, MOVE_TOXIC},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 200,
@@ -8637,7 +8637,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 				{
 					.species = SPECIES_NIDORAN_M,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_HORN_DRILL, MOVE_SLUDGE_BOMB, MOVE_FLATTER, MOVE_ATTRACT},
+					.moves = {MOVE_DRILL_RUN, MOVE_GUNK_SHOT, MOVE_FLATTER, MOVE_ATTRACT},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 255,
@@ -8670,7 +8670,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 				{
 					.species = SPECIES_NIDORINO,
 					.heldItem = ITEM_CHOICE_BAND,
-					.moves = {MOVE_SHOCK_WAVE, MOVE_HORN_DRILL, MOVE_ICE_BEAM, MOVE_IRON_TAIL},
+					.moves = {MOVE_SHOCK_WAVE, MOVE_DRILL_RUN, MOVE_ICE_BEAM, MOVE_IRON_TAIL},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 155,
