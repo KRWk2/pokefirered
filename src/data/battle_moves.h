@@ -2069,7 +2069,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_HP_DARK] = // Why Dark, SHF? If mons have max IVs, just use normal HP and reserve this for another HP type
     {
-        .effect = EFFECT_NORMAL_HIT,
+        .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_DARK,
         .accuracy = 100,
@@ -2186,7 +2186,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_THIEF] =
     {
-        .effect = EFFECT_NORMAL_HIT, // Not so sure if I agree with this, perhaps could limit the player's access to it and keep the old effect?
+        .effect = EFFECT_HIT, // Not so sure if I agree with this, perhaps could limit the player's access to it and keep the old effect?
         .power = 40,
         .type = TYPE_DARK,
         .accuracy = 100,
@@ -3696,7 +3696,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_DOUBLE_EDGE,
         .power = 120,
-        .type = TYPE_FIRE,
+        .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 8,
         .secondaryEffectChance = 0,
