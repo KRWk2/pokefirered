@@ -4605,7 +4605,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PSYCHO_BOOST] =
     {
         .effect = EFFECT_RECOIL,
-        .power = 140,
+        .power = 140, 
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 8,
