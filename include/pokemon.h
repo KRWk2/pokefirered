@@ -245,12 +245,12 @@ struct BattleMove
 
 extern const struct BattleMove gBattleMoves[];
 
-#define FLAG_MAKES_CONTACT          0x1
-#define FLAG_PROTECT_AFFECTED       0x2
-#define FLAG_MAGICCOAT_AFFECTED     0x4
-#define FLAG_SNATCH_AFFECTED        0x8
-#define FLAG_MIRROR_MOVE_AFFECTED   0x10
-#define FLAG_KINGSROCK_AFFECTED     0x20
+#define FLAG_MAKES_CONTACT          0x1 // Contact Move
+#define FLAG_PROTECT_AFFECTED       0x2 // Blocked by Protect
+#define FLAG_MAGICCOAT_AFFECTED     0x4 // Can be reflected by Magic Coat
+#define FLAG_SNATCH_AFFECTED        0x8 // Can be copied by Snatch
+#define FLAG_MIRROR_MOVE_AFFECTED   0x10 // Can be copied by Mirror Move
+#define FLAG_KINGSROCK_AFFECTED     0x20 // King's Rock adds 10% flinch
 
 struct SpindaSpot
 {
